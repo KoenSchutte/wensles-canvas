@@ -1,0 +1,35 @@
+<html>
+    <head>
+		<title>Wensles</title>
+		 <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+    <body>
+        <p>Color picker</p>
+        <div class="colorblock" id="black" onclick="chooseColor(this)" style="background-color:black;"></div>
+		<div class="colorblock" id="white" onclick="chooseColor(this)" style="background-color:white;"></div>
+        <div class="colorblock" id="red" onclick="chooseColor(this)" style="background-color:red;"></div>
+		<div class="colorblock" id="blue" onclick="chooseColor(this)" style="background-color:blue;"></div>
+		<div class="colorblock" id="green" onclick="chooseColor(this)" style="background-color:green;"></div>
+		<div class="colorblock" id="yellow" onclick="chooseColor(this)" style="background-color:yellow;"></div>
+		<div class="colorblock" id="purple" onclick="chooseColor(this)" style="background-color:purple;"></div>
+        
+        <p>Pencil size</p>
+		<input id="slider" type="range" min="1" max="100" value="1">
+        
+	<div>
+		<canvas id="canvas" width="500" height="500"></canvas>
+		<img id="canvasimg" alt="created by canvas" style="display:none;">
+	</div>
+
+	<div>
+		<input type="button" id="save" value="Save img">
+		<input type="button" id="clearCanvas" value="Clear canvas">
+	</div> 
+    </body>
+	
+	<style>
+	
+	</style>
+</html>
+<script src="script.js"></script>
